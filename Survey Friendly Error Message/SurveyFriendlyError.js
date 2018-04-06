@@ -48,12 +48,10 @@
 	    readSurveyVotes(function(votesCount){
 	        //if voted then display custom message 
 	        if(votesCount > 0) {
-	            //window.alert('You have already voted to this survey.');
 	            survey-check-message.innerHTML = "<h2>You already took the " + listTitle + " survey, thank you for checking!</h2>";
 	        }
 	        //if not, call original function for opening response form
 	        else {
-	            //NewItem2Orig(evt, url);
 	            survey-check-message.innerHTML = "<h2>Redirecting to " + listTitle +  " survey...</h2>";
 	            window.location.href = listPath;
 	        } 
